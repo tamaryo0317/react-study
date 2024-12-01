@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 const PORT = 8080;
 
-// CORSを有効化
+// CORSを有効化（なぜかこれしないとサーバーのリクエスト処理をしてくれない時がある）
 app.use(cors());
 
 // LoginServlet endpoint
